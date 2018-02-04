@@ -1,5 +1,5 @@
 package org.sits.custom;
 
-public class HashMap {
+public class CustomHashMap {
 
 }

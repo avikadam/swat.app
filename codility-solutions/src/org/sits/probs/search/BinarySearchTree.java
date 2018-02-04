@@ -14,6 +14,10 @@ package org.sits.probs.search;
  * must be no duplicate nodes.
  *
  */
+/**
+ * @author admin
+ *
+ */
 public class BinarySearchTree {
 	/* Class containing left and right child of current node and key value */
 	class Node {
@@ -23,6 +27,30 @@ public class BinarySearchTree {
 		public Node(int item) {
 			key = item;
 			left = right = null;
+		}
+
+		public int getKey() {
+			return key;
+		}
+
+		public void setKey(int key) {
+			this.key = key;
+		}
+
+		public Node getLeft() {
+			return left;
+		}
+
+		public void setLeft(Node left) {
+			this.left = left;
+		}
+
+		public Node getRight() {
+			return right;
+		}
+
+		public void setRight(Node right) {
+			this.right = right;
 		}
 	}
 
@@ -104,25 +132,66 @@ public class BinarySearchTree {
 		return minv;
 	}
 
-	// This method mainly calls InorderRec()
-	void inorder() {
+	/**
+	 * LEFT-ROOT-RIGHT
+	 */
+	public void inorder() {
 		inorderRec(root);
 	}
 
-	// A utility function to do inorder traversal of BST
-	void inorderRec(Node root) {
-		if (root != null) {
-			inorderRec(root.left);
-			System.out.println(root.key);
-			inorderRec(root.right);
-		}
+	/**
+	 * ROOT-LEFT-RIGHT
+	 */
+	public void preorder() {
+		preorderRec(root);
+	}
+
+	/**
+	 * LEFT-RIGHT-ROOT
+	 */
+	public void postOrderTraversal() {
+		doPostOrder(this.root);
+	}
+
+	/**
+	 * A utility function to do in-order traversal of BST
+	 * 
+	 * @param root
+	 */
+	private void inorderRec(Node root) {
+		if (root == null)
+			return;
+		inorderRec(root.getLeft());
+		System.out.println(root.getKey());
+		inorderRec(root.getRight());
+	}
+
+	private void preorderRec(Node root) {
+		if (root == null)
+			return;
+		System.out.println(root.getKey());
+		preorderRec(root.getLeft());
+		preorderRec(root.getRight());
+	}
+
+	private void doPostOrder(Node root) {
+		if (root == null)
+			return;
+		doPostOrder(root.getLeft());
+		doPostOrder(root.getRight());
+		System.out.print(root.getKey());
 	}
 
 	// Driver Program to test above functions
 	public static void main(String[] args) {
 		BinarySearchTree tree = new BinarySearchTree();
 		/*
-		 * Let us create following BST 50 / \ 30 70 / \ / \ 20 40 60 80
+		 * Let us create following BST 
+		 *     50 
+		 *    /  \ 
+		 *   30   70 
+		 *  / \   / \ 
+		 * 20 40 60 80
 		 */
 		tree.insert(50);
 		tree.insert(30);
@@ -132,7 +201,7 @@ public class BinarySearchTree {
 		tree.insert(60);
 		tree.insert(80);
 
-		// print inorder traversal of the BST
+		// print in-order traversal of the BST
 		tree.inorder();
 	}
 }

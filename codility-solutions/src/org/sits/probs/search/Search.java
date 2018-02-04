@@ -71,6 +71,35 @@ public class Search {
 		return location;
 	}
 
+	/**
+	 * Recursion is used in this algorithm because with each pass a new array is
+	 * created by cutting the old one in half. The binary search procedure is
+	 * then called recursively, this time on the new array. Typically the
+	 * array's size is adjusted by manipulating a beginning and ending index.
+	 * The algorithm exhibits a logarithmic order of growth because it
+	 * essentially divides the problem domain in half with each pass.
+	 * 
+	 * @param searchKey
+	 * @param data
+	 * @param start
+	 * @param end
+	 * @return
+	 */
+	public static int binarySearchRecursive(int searchKey, int[] data, int start, int end) {
+		if (start < end) {
+			int middle = (start + end + 1) / 2; // middle element
+
+			if (searchKey == data[middle]) {
+				return middle;
+			} else if (searchKey < data[middle]) {
+				return binarySearchRecursive(searchKey, data, start, middle);
+			} else {
+				return binarySearchRecursive(searchKey, data, middle, end);
+			}
+		}
+		return -1;
+	}
+
 	public static void main(String[] args) {
 		int[] data = new int[size];
 
@@ -78,7 +107,9 @@ public class Search {
 		for (int i = 0; i < size; i++)
 			data[i] = generator.nextInt(10);
 
-		int result = binarySearch(4, data);
-		System.out.println(result);
+		System.out.println(binarySearch(4, data));
+
+		int[] arr1 = { 2, 45, 234, 567, 876, 900, 976, 999 };
+		System.out.println(binarySearchRecursive(876, arr1, 0, arr1.length - 1));
 	}
 }
