@@ -153,6 +153,38 @@ public class BinarySearchTree {
 		doPostOrder(this.root);
 	}
 
+	public boolean isBinarySearchTree(Node root) {
+		if (root == null)
+			return Boolean.TRUE;
+		return isBstValid(root, Integer.MIN_VALUE, Integer.MAX_VALUE);
+	}
+
+	public Integer findHeight() {
+		return getNodeHeight(this.root);
+	}
+
+	public Integer findMinValue() {
+		return minValue(this.root);
+	}
+
+	public Integer findMaxValue() {
+		return maxValue(this.root);
+	}
+
+	private Integer maxValue(Node node) {
+		if (node.getRight() != null) {
+			return maxValue(node.getRight());
+		}
+		return node.getKey();
+	}
+
+	private Integer getNodeHeight(Node node) {
+		if (node == null) {
+			return -1;
+		}
+		return Math.max(getNodeHeight(node.getLeft()), getNodeHeight(node.getRight())) + 1;
+	}
+
 	/**
 	 * A utility function to do in-order traversal of BST
 	 * 
@@ -182,16 +214,22 @@ public class BinarySearchTree {
 		System.out.print(root.getKey());
 	}
 
+	private boolean isBstValid(Node root, Integer minValue, Integer maxValue) {
+		if (root == null)
+			return Boolean.TRUE;
+		if (root.getKey() >= minValue && root.getKey() < maxValue && isBstValid(root.getLeft(), minValue, root.getKey())
+				&& isBstValid(root.getRight(), root.getKey(), maxValue)) {
+			return Boolean.TRUE;
+		} else {
+			return Boolean.FALSE;
+		}
+	}
+
 	// Driver Program to test above functions
 	public static void main(String[] args) {
 		BinarySearchTree tree = new BinarySearchTree();
 		/*
-		 * Let us create following BST 
-		 *     50 
-		 *    /  \ 
-		 *   30   70 
-		 *  / \   / \ 
-		 * 20 40 60 80
+		 * Let us create following BST 50 / \ 30 70 / \ / \ 20 40 60 80
 		 */
 		tree.insert(50);
 		tree.insert(30);
