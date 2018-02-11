@@ -5,22 +5,13 @@ import java.util.LinkedList;
 
 public class GraphTraversal {
 	public static void main(String args[]) {
-		Graph g = new Graph(4);
-
-		g.addEdge(0, 1);
-		g.addEdge(0, 2);
-		g.addEdge(1, 2);
-		g.addEdge(2, 0);
-		g.addEdge(2, 3);
-		g.addEdge(3, 3);
+		Graph g = new Graph(4).addEdge(0, 1).addEdge(0, 2).addEdge(1, 2).addEdge(2, 0).addEdge(2, 3).addEdge(3, 3);
 
 		System.out.println("Following is Depth First Traversal " + "(starting from vertex 2)");
-
 		g.dfsTraversal(2);
-
+		System.out.println("");
 		System.out.println("Following is Breadth First Traversal " + "(starting from vertex 2)");
-
-		g.dfsTraversal(2);
+		g.bfsTraversal(2);
 	}
 }
 
@@ -41,8 +32,9 @@ class Graph {
 	}
 
 	// Function to add an edge into the graph
-	void addEdge(int v, int w) {
+	Graph addEdge(int v, int w) {
 		adj[v].add(w); // Add w to v's list.
+		return this;
 	}
 
 	// BFS traversal from a given source s

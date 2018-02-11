@@ -98,14 +98,12 @@ public class BinarySearchTree {
 			return root;
 
 		/* Otherwise, recur down the tree */
-		if (key < root.key)
+		if (key < root.key) {
 			root.left = deleteRec(root.left, key);
-		else if (key > root.key)
+		} else if (key > root.key) {
 			root.right = deleteRec(root.right, key);
-
-		// if key is same as root's key, then This is the node
-		// to be deleted
-		else {
+		} else {
+			// if key is same as root's key, then This is the node to be deleted
 			// node with only one child or no child
 			if (root.left == null)
 				return root.right;
@@ -240,6 +238,7 @@ public class BinarySearchTree {
 		tree.insert(80);
 
 		// print in-order traversal of the BST
-		tree.inorder();
+		// tree.inorder();
+		tree.deleteKey(20);
 	}
 }

@@ -26,14 +26,14 @@ class SortAlgorithms {
 		// int [] array = new int [] {1, 1, 0};
 
 		System.out.println(" Before: " + Arrays.toString(array));
-		SortAlgorithms.insertionSort(array);
+		// SortAlgorithms.insertionSort(array);
 		// SortAlgorithms.shellSort (array);
 		// SortAlgorithms.selectionSort (array);
 		// SortAlgorithms.heapSort (array);
 		// SortAlgorithms.bubbleSort (array);
 		// SortAlgorithms.quickSort (array, 0, array.length-1);
 		// SortAlgorithms.quickSortByStack (array);
-		// array = SortAlgorithms.mergingSort (array);
+		array = SortAlgorithms.mergingSort(array);
 		// SortAlgorithms.radixSort (array);
 		System.out.println(" After:   " + Arrays.toString(array));
 	}
@@ -51,12 +51,17 @@ class SortAlgorithms {
 	 * Insert directly into the order
 	 *
 	 * 1. Starting from the first element, the element can be considered as
-	 * being sorted 2. Remove the next element to scan from back to front in the
-	 * sorted sequence of elements 3. If the element (sorted) is greater than
-	 * the new element, move the element to the next position 4. Repeat step 3
-	 * until you find that the sorted element is less than or equal to the new
-	 * element's position 5. Insert a new element into the position 6. Repeat
-	 * steps 2 to 5
+	 * being sorted
+	 * 
+	 * 2. Remove the next element to scan from back to front in the sorted
+	 * sequence of elements
+	 * 
+	 * 3. If the element (sorted) is greater than the new element, move the
+	 * element to the next position
+	 * 
+	 * 4. Repeat step 3 until you find that the sorted element is less than or
+	 * equal to the new element's position 5. Insert a new element into the
+	 * position 6. Repeat steps 2 to 5
 	 * 
 	 * @param arr
 	 *            array to be sorted
@@ -75,7 +80,7 @@ class SortAlgorithms {
 	}
 
 	/**
-	 * Hill sort
+	 * Shell sort
 	 *
 	 * 1. Select an incremental sequence t1, t2, ..., tk, where ti> tj, tk = 1;
 	 * (usually the first time take the array half a length, then halved each

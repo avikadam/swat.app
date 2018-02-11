@@ -4,17 +4,16 @@ import java.util.Scanner;
 
 public class GameOfNim {
 	/**
-	 * gets the computer's move, 1 or 2. Currently this method gets a random
+	 * Gets the computer's move, 1 or 2. Currently this method gets a random
 	 * number. Your job is to make the computer choose such that it wins every
 	 * time it is possible. First, solve with recursion. After successfully
 	 * completing this, run the program a few times to see if you can recognize
 	 * the pattern the computer is taking. Then see if you can get the computer
 	 * to choose its move without looping or recursion.
 	 * 
-	 * @param left
 	 * @return
 	 */
-	public int getComputerMove(int left) {
+	public int getRandomComputerMove() {
 		return (int) (Math.random() * 2) + 1;
 	}
 
@@ -26,7 +25,7 @@ public class GameOfNim {
 			System.out.println("Enter number of elements to start.");
 			int left = sc.nextInt();
 			while (left > 0) {
-				int computer = getComputerMove(left);
+				int computer = getRandomComputerMove();
 				System.out.println("Computer takes " + computer);
 				left -= computer;
 				System.out.println("Now there are " + left + " left.");
