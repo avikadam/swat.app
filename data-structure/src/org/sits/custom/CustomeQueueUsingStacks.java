@@ -2,6 +2,13 @@ package org.sits.custom;
 
 import java.util.Stack;
 
+/**
+ * Stack works in LIFO manner
+ * 
+ * Queue works in FIFO manner
+ *
+ * @param <E>
+ */
 public class CustomeQueueUsingStacks<E> {
 	Stack<E> st1;
 	Stack<E> st2;
