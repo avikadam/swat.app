@@ -8,3 +8,6 @@ RESTful -
 
 Security -
 1. RabbitMQ SSL - https://www.oodlestechnologies.com/blogs/Connect-to-SSL-enabled-RabbitMQ-server-Springboot
+
+Messaging -
+1. https://www.rubix.nl/blogs/amqp-vs-jms (IMP)
