@@ -10,6 +10,8 @@
         1. https://www.edureka.co/blog/what-is-microservices/
         2. https://www.edureka.co/blog/microservices-vs-soa/
         3. https://www.edureka.co/blog/microservices-with-spring-boot
+        4. http://www.springboottutorial.com/creating-microservices-with-spring-boot-part-1-getting-started
+        5. https://github.com/in28minutes/spring-boot-examples/tree/master/spring-boot-basic-microservice
 
 ## Security
 ### 1. RabbitMQ SSL
