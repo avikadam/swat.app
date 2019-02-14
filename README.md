@@ -7,7 +7,9 @@
         3. https://www.softwaretestinghelp.com/restful-web-services-interview-question/
 
 ## Micro service
-        1. https://www.edureka.co/blog/microservices-vs-soa/
+        1. https://www.edureka.co/blog/what-is-microservices/
+        2. https://www.edureka.co/blog/microservices-vs-soa/
+        3. https://www.edureka.co/blog/microservices-with-spring-boot
 
 ## Security
 ### 1. RabbitMQ SSL
