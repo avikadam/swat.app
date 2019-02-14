@@ -10,7 +10,9 @@ Security -
 1. RabbitMQ SSL - https://www.oodlestechnologies.com/blogs/Connect-to-SSL-enabled-RabbitMQ-server-Springboot
 
 Messaging -
-1. https://www.rubix.nl/blogs/amqp-vs-jms (IMP)
+1. RabbitMQ - 
+        https://www.rubix.nl/blogs/amqp-vs-jms (IMP)
+        https://www.cloudamqp.com/blog/2015-05-18-part1-rabbitmq-for-beginners-what-is-rabbitmq.html
 2. Kafka - 
         https://sookocheff.com/post/kafka/kafka-in-a-nutshell/
         https://blog.newrelic.com/engineering/kafka-best-practices/
