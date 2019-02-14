@@ -11,4 +11,7 @@ Security -
 
 Messaging -
 1. https://www.rubix.nl/blogs/amqp-vs-jms (IMP)
-2. Kafka - https://sookocheff.com/post/kafka/kafka-in-a-nutshell/
+2. Kafka - 
+        https://sookocheff.com/post/kafka/kafka-in-a-nutshell/
+        https://blog.newrelic.com/engineering/kafka-best-practices/
+        https://kafka.apache.org/intro
