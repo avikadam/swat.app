@@ -14,6 +14,12 @@
         5. https://github.com/in28minutes/spring-boot-examples/tree/master/spring-boot-basic-microservice
 
 ## Security
+**Authentication types (BASIC, DIGEST, FORM, and CLIENT-CERT)**
+-HTTP Basic Authentication
+-HTTP Digest Authentication
+-HTTPS Client Authentication
+-Form Based Authentication
+
 **Encoding** transforms data into another format using a scheme that is publicly available so that it can easily be reversed.
 
 **Encryption** transforms data into another format in such a way that only specific individual(s) can reverse the transformation.
