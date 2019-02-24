@@ -26,6 +26,8 @@
 **Encryption** transforms data into another format in such a way that only specific individual(s) can reverse the transformation.
 **Encryption** is for maintaining data confidentiality and thus the ability to reverse the transformation (keys) are limited to certain people.
 
+        1. https://www.veracode.com/directory/owasp-top-10
+
 ### 1. RabbitMQ SSL
         1. https://www.oodlestechnologies.com/blogs/Connect-to-SSL-enabled-RabbitMQ-server-Springboot
 
