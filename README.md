@@ -39,3 +39,7 @@
         1. https://sookocheff.com/post/kafka/kafka-in-a-nutshell/ <br/>
         2. https://blog.newrelic.com/engineering/kafka-best-practices/ <br/>
         3. https://kafka.apache.org/intro <br/>
+
+## Other IMP
+
+        1. https://www.codeproject.com/Articles/553206/An-Introduction-to-Real-Time-Stock-Market-Data-Pro
