@@ -21,11 +21,11 @@
 -Form Based Authentication
 
 **Authorization**
--OAuth 1/2
--OpenId
--JWT
--SSO
--API KEY
+- OAuth 1/2
+- OpenId
+- JWT
+- SSO
+- API KEY
 
 **Encoding** transforms data into another format using a scheme that is publicly available so that it can easily be reversed.
 **Encoding** is for maintaining data usability and uses schemes that are publicly available.
