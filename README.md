@@ -19,6 +19,7 @@
 -HTTP Digest Authentication
 -HTTPS Client Authentication
 -Form Based Authentication
+
 **Authorization**
 -OAuth 1/2
 -OpenId
