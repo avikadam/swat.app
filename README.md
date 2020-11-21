@@ -6,7 +6,7 @@
         2. https://www.apiacademy.co/articles/2015/12/how-to-http-caching-for-restful-hypermedia-apis
         3. https://www.softwaretestinghelp.com/restful-web-services-interview-question/
 
-## Micro service
+## Microservice
         1. https://www.edureka.co/blog/what-is-microservices/
         2. https://www.edureka.co/blog/microservices-vs-soa/
         3. https://www.edureka.co/blog/microservices-with-spring-boot
@@ -19,13 +19,18 @@
 -HTTP Digest Authentication
 -HTTPS Client Authentication
 -Form Based Authentication
+**Authorization**
+-OAuth 1/2
+-OpenId
+-JWT
+-SSO
+-API KEY
 
 **Encoding** transforms data into another format using a scheme that is publicly available so that it can easily be reversed.
 **Encoding** is for maintaining data usability and uses schemes that are publicly available.
 
 **Encryption** transforms data into another format in such a way that only specific individual(s) can reverse the transformation.
 **Encryption** is for maintaining data confidentiality and thus the ability to reverse the transformation (keys) are limited to certain people.
-
         1. https://www.veracode.com/directory/owasp-top-10
 
 ### 1. RabbitMQ SSL
@@ -41,5 +46,4 @@
         3. https://kafka.apache.org/intro <br/>
 
 ## Other IMP
-
         1. https://www.codeproject.com/Articles/553206/An-Introduction-to-Real-Time-Stock-Market-Data-Pro
