@@ -15,10 +15,10 @@
 
 ## Security
 **Authentication types (BASIC, DIGEST, FORM, and CLIENT-CERT)**
--HTTP Basic Authentication
--HTTP Digest Authentication
--HTTPS Client Authentication
--Form Based Authentication
+- HTTP Basic Authentication
+- HTTP Digest Authentication
+- HTTPS Client Authentication
+- Form Based Authentication
 
 **Authorization**
 - OAuth 1/2
